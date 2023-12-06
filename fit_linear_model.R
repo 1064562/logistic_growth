@@ -7,7 +7,7 @@ growth_data <- read.csv("experiment1.csv")
 
 #Case 1. K >> N0, t is small
 
-data_subset1 <- growth_data %>% filter(t<N) %>% mutate(N_log = log(N))
+data_subset1 <- growth_data %>% filter(t<1600) %>% mutate(N_log = log(N))
 
 model1 <- lm(N_log ~ t, data_subset1)
 summary(model1)
