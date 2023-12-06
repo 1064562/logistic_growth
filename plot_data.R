@@ -1,9 +1,5 @@
 #Script to plot the logistic growth data
 
-sink(file = "package-versions.txt")
-sessionInfo()
-sink()
-
 install.packages("ggplot2")
 library(ggplot2)
 
