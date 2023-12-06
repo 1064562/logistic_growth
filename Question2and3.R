@@ -46,11 +46,11 @@ pop_4980_logistic
 
 # Question 3: make a graph of exponential / logistic growth curves:
 
-ggplot(aes(t,N), data = growth_data) +
+ggplot(aes(t, N), data = growth_data) +
   
-  geom_function(fun=logistic_fun, colour="red") +
+  geom_function(aes(colour="Logistic Growth"), fun=logistic_fun) +
   
-  geom_function(fun=expo_fun, colour="blue") +
+  geom_function(aes(colour="Exponential Growth"), fun=expo_fun) +
   
   geom_point() +
   
@@ -60,4 +60,11 @@ ggplot(aes(t,N), data = growth_data) +
     title = "Comparison of Exponential and Logistic Growth Models",
     x = "Time",
     y = "Population Size (log scale)"
-  )
+  ) +
+  
+  scale_colour_manual(
+    name = "Growth Models",
+    values = c("Logistic Growth" = "red", "Exponential Growth" = "blue")
+  ) +
+  
+  theme(legend.position = "bottom")
