@@ -33,5 +33,5 @@ The intercept estimate means the carrying capacity (K), therefore K = 5.979e+10.
 At t=4980 and using the formula N(t) = N0 x e^rt that assumes exponential growth and no carrying capacity, I found that the population size is 2.787887e+22 (N(t)). When I found the population size at t=4980 in the logistic growth model, N = 5.979e+10 (which is actually the estimated carrying capcity). This is lower compared to the constant exponential growth model. This makes sense as the carrying capcity in the logisitic model is hit after around 2000 minutes. The other model does not have a carrying capacity in its equation, and so does not slow down as it nears carrying capacity unlike the logistic model. (Code for how this was done is in the repository as "Question2").
 
 # Question 3:
-
+![Graph showing a comparison of the exponential and logistic growth model](Rplot.png) 
 
