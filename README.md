@@ -15,6 +15,7 @@ For the linear approximation results, using "experiment1.csv" I got:
 Coefficients:
              Estimate Std. Error t value Pr(>|t|)    
 (Intercept) 6.903e+00  1.249e-02   552.6   <2e-16 ***
+
 t           9.990e-03  1.374e-05   727.1   <2e-16 ***
 
 The intercept estimate means N (y-axis) when t=0, the initial population size. Therefore N0 = 6.903e+00.
@@ -35,6 +36,7 @@ At t=4980 and using the formula N(t) = N0 x e^rt that assumes exponential growth
 # Question 3:
 
 ![Graph showing a comparison of the exponential and logistic growth model](Rplot.png) 
+
 (Code for how this was done is in the repository as "Question2and3").
 
 
