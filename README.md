@@ -23,9 +23,9 @@ The t estimate means the increase in N (y-axis) per timestep (1s), which is r (g
 
 ## Model 2 - the stationary phase (N(t) = K):
 
-| Coefficient | Estimate   | Std. Error | t value | Pr(>|t|)   |
-|-------------|------------|------------|---------|------------|
-| Intercept   | 5.979e+10  | 1.084e+08  | 551.4   | <2e-16 *** |
+| Coefficient | Estimate  | Std. Error | t value | Pr(>|t|)   |
+|-------------|-----------|------------|---------|------------|
+| Intercept   | 5.979e+10 | 1.084e+08  | 551.4   | <2e-16 *** |
 
 The intercept estimate means the carrying capacity (K), therefore K = 5.979e+10.
 
