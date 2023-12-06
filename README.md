@@ -13,10 +13,10 @@ For the linear approximation results, using "experiment1.csv" I got:
 ## Model 1 - the growth phase (K>N0):
 
 Coefficients:
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept) 6.903e+00  1.249e-02   552.6   <2e-16 ***
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 6.903e+00  1.249e-02   552.6   <2e-16
 
-t           9.990e-03  1.374e-05   727.1   <2e-16 ***
+t           9.990e-03  1.374e-05   727.1   <2e-16
 
 The intercept estimate means N (y-axis) when t=0, the initial population size. Therefore N0 = 6.903e+00.
 The t estimate means the increase in N (y-axis) per timestep (1s), which is r (growth rate), therefore r = 9.990e-03.
