@@ -1,9 +1,5 @@
 #Script to estimate the model parameters using a linear approximation
 
-sink(file = "package-versions.txt")
-sessionInfo()
-sink()
-
 install.packages("dplyr")
 library(dplyr)
 
