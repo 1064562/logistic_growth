@@ -48,21 +48,15 @@ pop_4980_logistic
 
 ggplot(aes(t, N), data = growth_data) +
   # include two different models, specify that they are different colours
-  geom_function(aes(colour="red"), fun=logistic_fun) +
+  geom_function(colour="red", fun=logistic_fun) +
   
-  geom_function(aes(colour="blue"), fun=expo_fun) +
+  geom_function(colour="blue", fun=expo_fun) +
 
   #transform y axis
   scale_y_continuous(trans='log10') +
   #add title + axis
   labs(
-    title = "Comparison of Exponential and Logistic Growth Models",
+    title = "Comparison of Exponential (blue) and Logistic Growth Models (red)",
     x = "Time",
     y = "Population Size (log scale)"
-  ) +
-  # add a legend, put it at the bottom of the graph
-  scale_colour_manual(
-    name = "Growth Models",
-  ) +
-  
-  theme(legend.position = "bottom")
+  ) 
