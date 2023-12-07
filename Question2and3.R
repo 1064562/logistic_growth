@@ -51,8 +51,7 @@ ggplot(aes(t, N), data = growth_data) +
   geom_function(aes(colour="Logistic Growth"), fun=logistic_fun) +
   
   geom_function(aes(colour="Exponential Growth"), fun=expo_fun) +
-  
-  geom_point() +
+
   #transform y axis
   scale_y_continuous(trans='log10') +
   #add title + axis
