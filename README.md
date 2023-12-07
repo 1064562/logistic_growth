@@ -40,7 +40,7 @@ At t=4980 and using the formula N(t) = N0 x e^rt that assumes exponential growth
 
 # Question 3:
 
-![Graph showing a comparison of the exponential and logistic growth model](exponlogicurves.png) 
+![Graph showing a comparison of the exponential and logistic growth model](logiexpo.png) 
 
 (Code for how this was done is in the repository as "Question2and3").
 
