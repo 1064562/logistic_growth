@@ -48,9 +48,9 @@ pop_4980_logistic
 
 ggplot(aes(t, N), data = growth_data) +
   # include two different models, specify that they are different colours
-  geom_function(aes(colour="Logistic Growth"), fun=logistic_fun) +
+  geom_function(aes(colour="red"), fun=logistic_fun) +
   
-  geom_function(aes(colour="Exponential Growth"), fun=expo_fun) +
+  geom_function(aes(colour="blue"), fun=expo_fun) +
 
   #transform y axis
   scale_y_continuous(trans='log10') +
@@ -60,10 +60,9 @@ ggplot(aes(t, N), data = growth_data) +
     x = "Time",
     y = "Population Size (log scale)"
   ) +
-  # add a legend, put it at the bottom of the graph and specify the colours of the model lines
+  # add a legend, put it at the bottom of the graph
   scale_colour_manual(
     name = "Growth Models",
-    values = c("Logistic Growth" = "red", "Exponential Growth" = "blue")
   ) +
   
   theme(legend.position = "bottom")
